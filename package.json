@@ -1,0 +1,33 @@
+{
+  "name": "wa-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.24.0",
+    "clsx": "^1.1.1",
+    "formik": "^2.2.9",
+    "he": "^1.2.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "test:integration:open": "cypress open",
+    "test:integration": "cypress run --headless"
+  },
+  "devDependencies": {
+    "@types/he": "^1.1.2",
+    "@types/next": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "cypress": "^8.4.0",
+    "typescript": "latest"
+  }
+}
