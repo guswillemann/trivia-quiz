@@ -1,9 +1,9 @@
 import { Box, Container, Link, makeStyles } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { AppProps } from 'next/app';
-import Head from 'next/head';
 import React from 'react';
 import Logo from '../src/components/Logo';
+import SEO from '../src/components/SEO';
 import { QuestionsProvider } from '../src/contexts/QuestionsContext';
 import ThemeProvider from '../src/contexts/Theme';
 
@@ -31,14 +31,11 @@ export default function MyApp(props: AppProps) {
 
   return (
     <React.Fragment>
-      <Head>
-        <title>Trivia Quiz!</title>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-      </Head>
       <QuestionsProvider>
         <ThemeProvider>
           <CssBaseline />
           <Container maxWidth="sm">
+            <SEO />
             <Box className={classes.gridContainer}>
               <Box>
                 <Link href="/">
